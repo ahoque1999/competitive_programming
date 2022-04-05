@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" two regular polygons """
+""" two regular polygons 800 """
 
 
 def main() -> None:
