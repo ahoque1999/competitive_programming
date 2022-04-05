@@ -1,4 +1,5 @@
 def gcd(x, y):
+    
     y = max([x, y])
     x = min([x, y])
     
