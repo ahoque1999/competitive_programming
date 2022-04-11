@@ -21,11 +21,12 @@ def answer(n_inp):
     """ calculate the sum of values for all subsegments """
 
     a_inp = list(map(int, get_input().split()))
-    sum_ = 0
-    for start in range(n_inp):
-        for leng in range(1, n_inp - start + 1):
-            sum_ += value(a_inp[start: start + leng])
-    return sum_
+    return sum(
+        [
+            value(a_inp[start: start+leng])
+            for start in range(n_inp) for leng in range(1, n_inp-start+1)
+        ]
+    )
 
 
 class Test(TestCase):
