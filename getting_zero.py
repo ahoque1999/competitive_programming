@@ -35,11 +35,11 @@ class Test(TestCase):
 
 
 def gcd(num_1, num_2):
-    """ get greatest common divisor, num_1 is smaller """
+    """ get greatest common divisor """
 
-    if num_1 == 0:
-        return num_2
-    return num_1 if num_2 % num_1 == 0 else gcd(num_2 % num_1, num_1)
+    while num_2:
+        num_1, num_2 = num_2, num_1%num_2
+    return num_1
 
 
 def answer(num_1):

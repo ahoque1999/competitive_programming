@@ -1,11 +1,10 @@
-def gcd(x, y):
-    
-    y = max([x, y])
-    x = min([x, y])
-    
-    while y:
-        x, y = y, x % y
-    return x
+def gcd(num_1, num_2):
+    """ get greatest common divisor """
+
+    while num_2:
+        num_1, num_2 = num_2, num_1%num_2
+    return num_1
+
 
 for _ in range(int(input())):
     k = int(input())
