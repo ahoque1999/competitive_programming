@@ -49,8 +49,7 @@ def answer(n_in, k_in):
 
     if rem <= kp1:
         return list(range(1, n_in+1, k2p1))
-    else:
-        return list(range(1+rem-(k_in+1), n_in+1, k2p1))
+    return list(range(1+rem-(k_in+1), n_in+1, k2p1))
 
 
 def main() -> None:
